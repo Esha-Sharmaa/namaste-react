@@ -1,0 +1,8 @@
+1. Importing superpowers into our code provided by REACT and REACTDOM using react CDN links
+2. Creating an React element using React.createElement(type props, childern)
+3. React needs a "root" where it can do all the DOM manipulation. Creating a "root" and rendering things inside it is the job of the ReactDOM.
+4. Creating "root" using ReactDOM.createRoot()
+5. render() api provided by React-DOM takes the react element converts into a tag that is understandable to the browser
+6. Creating complicated nested html tag structure using React.
+
+* We should first import React and ReactDOM into our code the write our program else it will give an error 

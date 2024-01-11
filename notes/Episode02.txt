@@ -1,0 +1,16 @@
+how to make our app production ready 
+  --> our code needs to be bundled, minified, cached, clean before it is pushed to production this is done by a bundler like vite, parcel,webpack
+1.Not only just React make our app fast, we need a lot of packages to do so 
+2. How to get those packages into our app
+    ** NPM is not node package manager
+    ** NPM does not have a full form 
+3.NPM is the standard repository for all the packages, All the libaries and utilites you need come NPM
+4. Make our project use npm 
+    ** package.json is the configuration file for npm 
+5. There are two types of dependencies that our app can have    
+    a. normal dependencies - that are used in production also
+    b. dev dependencies - that are used in development phase (npm install -D package-name)
+    caret vs tilde
+    package-lock.json vs package.json
+    t is a file that locks down the specific versions of dependencies that are installed in the project
+    node_modules  --> contains the code of the dependencies we install using npm into our projects
