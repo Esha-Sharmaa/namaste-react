@@ -1,4 +1,5 @@
-
+import React from "react";
+import ReactDOM from "react-dom";
 const nestedStructure = React.createElement('div', {
     id: 'parent'
 }, [

@@ -1,0 +1,26 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "namaste react course code ",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esha-Sharmaa/namaste-react.git"
+  },
+  "author": "Esha Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esha-Sharmaa/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Esha-Sharmaa/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

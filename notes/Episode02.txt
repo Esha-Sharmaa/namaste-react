@@ -14,3 +14,45 @@ how to make our app production ready
     package-lock.json vs package.json
     t is a file that locks down the specific versions of dependencies that are installed in the project
     node_modules  --> contains the code of the dependencies we install using npm into our projects
+6. if have package.json and package-lock.json we can regenearate node_modules
+
+
+** IGNIGTING OUR APP WITH PARCEL **
+npx parcel index.html --> npx command is used to execute packages
+on executing parcel it creates a development build for our app and host it there 
+
+** Importing react into our code using npm **
+it is more efficient to have react into our node_modules rather than have to make a network call to fetch it using cdn links 
+npm i react 
+npm i react-dom
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+
+** secne-stealer ** 
+Parcel 
+- generates a dev build and put all your files in the dist folder inside your project
+- creates local server and host our app there 
+- performs HMR (HOT Module Replacement ) using a File Replacement Algorithm 
+- Caching - Faster Builds (does this by creating a .parcel_cache folder into project for caching)
+- Build prod build using parcel 
+
+
+
+* how to make our app compatiable for older browser --> browser list 
+
+
+
+
+
+
+
+
+
+
+
+Export/Import:
+
+Normal Browser Script: Variables and functions in a traditional script are automatically available globally, without the need for explicit export/import statements.
+Module File: Modules explicitly define what they want to expose using the export keyword. Other modules can import specific functionalities using the import statement, promoting a more controlled and modular approach.
