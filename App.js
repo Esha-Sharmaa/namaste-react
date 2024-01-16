@@ -1,15 +1,24 @@
 import React from "react";
-import ReactDOM from "react-dom";
-const nestedStructure = React.createElement('div', {
-    id: 'parent'
-}, [
-    React.createElement('div', {
-        id: 'child'
-    }, [React.createElement('h1', {}, "I am the h1 tag"), React.createElement('h2', {}, "I am the h2 tag")]),
-    React.createElement('div', {
-        id: 'child2'
-    }, [React.createElement('h1', {}, "I am the h1 tag"), React.createElement('h2', {}, "I am the h2 tag")])
-]);
+import ReactDOM from "react-dom/client";
+                                                                                // (JSX not html)
+//const heading =  React.createElement('h1',{},"this is h1") === const heading = <h1> this is h1 </h1>
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(nestedStructure);
+const heading = React.createElement("h1", {}, "Heading");
+
+// creating react element using jsx
+const link = <a href=""> link element </a>;
+
+// React Functional Components and eact element inside a react component
+const Item = () => <li> {link}</li>;
+
+// using react component inside a react component (component composition)
+const Navbar = () => {
+  return (<div className="nav">
+    {heading}
+    <Item />
+    <Item> </Item> 
+    {Item()}
+  </div>);
+};
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Navbar />);

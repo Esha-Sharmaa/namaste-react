@@ -1,0 +1,24 @@
+**PART 01**
+learned about NPM scripts 
+we can write specify scripts in package.json and we can run any scripts using npm run followed by the script name 
+**PART 02**
+React.createElement(type, props, children) returns a react element(js object) is converted into a html element when render using root.render()
+
+**PART 03**
+WHAT IS JSX?
+JSX is a syntax extension to javascript that makes creating react element easier. 
+It is not html inside javascript.
+JSX is HTML-like syntax or XML-like syntax. 
+JSX is not react, JSX is different and react is different
+JSX elements are transformed into React elements by a transcompiler (babel), and eventually, these React elements render into HTML elements that display on the browser.
+JSX takes care of injection attacks by escaping it.
+We inject JavaScript within JSX, simply enclose the JavaScript code within curly braces, like this: {any valid javascript expression}
+
+** PART 04**
+React Components --> two ways to create a react Components 
+Class Based Components
+Functional Components
+
+React Functional Components --> just a js fuction that returns a react element or piece of jsx code 
+1. the name of the react Component must start with a capital letter.
+2. to render a Functional Component use < ComponentName/>

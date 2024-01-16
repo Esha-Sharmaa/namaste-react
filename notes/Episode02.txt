@@ -4,7 +4,7 @@ how to make our app production ready
 2. How to get those packages into our app
     ** NPM is not node package manager
     ** NPM does not have a full form 
-3.NPM is the standard repository for all the packages, All the libaries and utilites you need come NPM
+3.NPM is the standard repository for all the packages. All the libaries and utilites you need come NPM
 4. Make our project use npm 
     ** package.json is the configuration file for npm 
 5. There are two types of dependencies that our app can have    
