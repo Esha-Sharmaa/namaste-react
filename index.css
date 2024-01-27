@@ -33,8 +33,7 @@ nav {
   padding: 10px;
 }
 .logo-container {
-  flex-basis: 10%;
-  padding: 10px;
+  width: 100px;
 }
 img {
   width: 100%;
@@ -97,4 +96,18 @@ img {
 }
 .additional-info{
     color: grey;
+}
+.filter-btn{
+  background-color: #e3455d;
+  outline: none;
+  border: none;
+  display: block;
+  margin-inline:auto;
+  color: white;
+  padding:1rem;
+  font-size: 18px;
+  font-family: inherit;
+  margin-block: 1rem;
+  border-radius: 20px;
+
 }

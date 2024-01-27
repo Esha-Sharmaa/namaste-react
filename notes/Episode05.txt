@@ -1,0 +1,58 @@
+** React application file structure **
+React doesn’t have opinions on how you put files into folders. 
+
+    src
+    |--App.js
+    |-- component
+        |--Header.js
+        |--Body.js
+        |--RestuarantCard.js
+        |--RestuarantList.js
+
+** Create a separate file for each component **
+we should create a separate file for each component to follow SRP.
+Single Responsibility principle (SRP) is a design Patten which states each component in an application should have one responsibility / purpose.
+
+
+** Default and named exports  and imports **
+
+Default exports: are used to export a single value(function/variable) from a module. There can only be one default export per module.
+Default export example :
+const def = "example of Default export"
+export default def;
+
+Named exports: are used to export multiple values(functions/variables) from a module.
+For named export, use the export keyword before the function/varibles you want to export.
+Ex:
+export const URL = "www.example.com";
+export cosnt path = "./folder/nestedFolder";
+
+Default import 
+Default exports are exported without being assigned to a specific name. To import a default export, you can use the import keyword without curly braces.
+import def form "./def"
+
+Named imports
+Named exports are exported by assigning them to a specific name.To import named exports, use the import keyword followed by curly braces containing the names of the exports you want to import.
+Example :
+import { URL, path } from "./constant";
+
+
+** What are Hooks **
+Hooks are nothing but just javascript functions.
+There are different types of hooks. 
+Most common hooks is useState Hook and useEffect Hook.
+
+** What are state variable?**
+A state variable is a special type of variable that can be used to store data that changes over time.
+
+** What is useState hook?**
+The useState hook is used to create state variable. useState hook takes the initial value of the state variable as its argument.
+It returns a pair of values: the current state and a function to update the state. 
+
+** What is Virtual DOM**
+    Virtual DOM is the javascript object representaion of actual DOM.
+
+** Why is React Fast**
+React is fast because it does efficient DOM manipulation.
+by finding the difference between the updated virtual DOM and previous virtual DOM using the diff algorithm and then updates only the parts of the DOM that need to be changed.
+It uses the diff algorithm to find the difference between the updated virtual DOM and previous virtual DOM and then updates only the parts of the DOM that need to be changed.
