@@ -99,7 +99,7 @@ img {
 }
 .filter-btn{
   background-color: #e3455d;
-  outline: none;
+  outline: none;  
   border: none;
   display: block;
   margin-inline:auto;
@@ -110,4 +110,26 @@ img {
   margin-block: 1rem;
   border-radius: 20px;
 
+}
+.shimmer-container{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+.shimmer-card{
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to right, transparent 0%, #a94545 50%, transparent 100%);
+    animation: shimmerAnimation 2s infinite linear;
+}
+
+@keyframes shimmerAnimation {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }

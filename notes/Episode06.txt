@@ -1,0 +1,22 @@
+** PART 01**
+monolithic and microservies architecture
+
+** PART 02**
+There are two approaches to fetch data from api and render it
+    1. First Approch, whenever our page loads we make the api request and wait for the resopnse as soon as we get the respone then we render the ui with the data
+    2. Second Approach, whenever our page loads we render the UI without the response from the api and we have the api response we re-render the UI with the response 
+
+    /*In react we always use the second Approach because it gives better UX
+
+    useEffect(callback, dependency array); 
+    the callback function will be called after the component has been rendered
+
+
+    our browers block us to make request from one origin to another origin 
+    by passing the CORS 
+
+    shimmer ui 
+
+    conditional rendering   -- > rendering on the basis of condition is called conditional rendering.
+
+     the const keyword ensures that the variable name doesn't get reassigned, it doesn't make the internal content of the object (such as a state variable) immutable. React leverages this characteristic to efficiently manage state changes and updates in a component.
