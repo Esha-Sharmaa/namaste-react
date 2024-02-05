@@ -1,7 +1,7 @@
 import { useState, useEffect} from "react";
 import ResturantCard from "./ResturantCard";
 import Shimmer from "./Shimmer";
-
+import { Link } from "react-router-dom";
 const ResturantList = () => {
     const [searchText, setSearchText] = useState("")
     const [resturantList, setResturantList] = useState([]);
@@ -18,12 +18,10 @@ const ResturantList = () => {
         } catch (e) {
             console.log(e);
         }   
-    }
-
- 
+    } 
     useEffect(() => {
         fetchData();
-    }, []);
+    },[]);
    
     const cards = <>
         <div className="search-container">
@@ -49,15 +47,15 @@ const ResturantList = () => {
         <button
             className="filter-btn"
             onClick={() => {
-            const filteredResturant = resturantList.filter((resturant) => resturant.info.avgRating > 4)
-            filteredResturant(filteredResturant);
+            const filtered = resturantList.filter((resturant) => resturant.info.avgRating > 4)
+                setFilteredResturant(filtered);
             }}>
             Filter Top Resturant
         </button>
         <div className="title"> <h2 > Restaurants With Online in Gwalior</h2></div>
         <div className="resturant-list">
             {
-                filteredResturant.map((resturant) => <ResturantCard key={resturant.info.id} resData={resturant.info} />)
+                filteredResturant.map((resturant) => <Link key={resturant.info.id} to={`/resturantMenu/${resturant.info.id}`}> <ResturantCard  resData={resturant.info} /></Link>)
             }
         </div>
     </>

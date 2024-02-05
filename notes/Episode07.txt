@@ -1,0 +1,39 @@
+ 
+useEffect() hook 
+CASE I - if the dependency array is not present, it is called on every render of the component 
+CASE II - if the dependency array is empty, it is called only on the inital render 
+CASE III - if the dependency array is not empty, it is called each time the dependency changes 
+
+
+useState() hook
+
+
+
+IMP TIPS 
+1. Hooks are only called inside the body of a functional component 
+2. it is good practice to create variable in the beginnig of the functional component 
+3, Never use useState hook in a condition, loops and functions
+
+Routing in React application 
+use the package react-router-dom 
+root level componet - app.js 
+to create routs we have to define routing configurations in app.js 
+
+use createBrowserRoute to define the routing configurations
+then use RouterProvider to provide the routs to render function 
+we can use useRouteError hook to provide more information about the error
+
+
+childern routes 
+<Outlet/>
+childern property to the parent path 
+<Link> </Link> component refreshs the component instead of reloading the whole page like <a> tag
+
+SINGLE PAGE application
+
+two types of routing 
+1. client side routing
+2. server side routing 
+
+
+Dynamic Routing 

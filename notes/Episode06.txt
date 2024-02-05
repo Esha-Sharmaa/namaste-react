@@ -1,22 +1,23 @@
 ** PART 01**
 monolithic and microservies architecture
+Monolithic architecture builds an application as a single, while microservices architecture breaks down the application into independently deployable and scalable services
+
 
 ** PART 02**
 There are two approaches to fetch data from api and render it
-    1. First Approch, whenever our page loads we make the api request and wait for the resopnse as soon as we get the respone then we render the ui with the data
-    2. Second Approach, whenever our page loads we render the UI without the response from the api and we have the api response we re-render the UI with the response 
+    1. Upon page load, initiate a  API request and Wait for the API response ,once the response is received, render the UI with the fetched data
+    2. On page load, initiate the UI rendering without waiting for the API response. Upon receiving the API response, re-render the UI with the updated data
 
-    /*In react we always use the second Approach because it gives better UX
+    /*In react we always use the second Approach because it gives better UX*/
 
-    useEffect(callback, dependency array); 
-    the callback function will be called after the component has been rendered
+    useEffect(callback, dependency array) 
+    -- the callback function will be called after the component has been rendered
 
 
-    our browers block us to make request from one origin to another origin 
-    by passing the CORS 
-
-    shimmer ui 
+    our browers block us to make request from one origin(domain) to another origin(domain) 
+    Cross-origin (request from one origin(domain) to another origin(domain)) requests are restricted by browsers.
+    shimmer ui -  a version of the UI that doesn't contain actual content, but instead mimics the layout and shapes of the content that will eventually appear after data has been fetched form the API
 
     conditional rendering   -- > rendering on the basis of condition is called conditional rendering.
 
-     the const keyword ensures that the variable name doesn't get reassigned, it doesn't make the internal content of the object (such as a state variable) immutable. React leverages this characteristic to efficiently manage state changes and updates in a component.
+    the const keyword ensures that the variable name doesn't get reassigned, it doesn't make the internal content of the object (such as a state variable) immutable. React leverages this characteristic to efficiently manage state changes and updates in a component.
