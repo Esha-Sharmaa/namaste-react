@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
+import About from "./src/components/About";
 import Cart from "./src/components/Cart";
 import Error from "./src/components/Error";
 import ResturantMenu from "./src/components/ResturantMenu";
@@ -28,7 +29,11 @@ const appRoute = createBrowserRouter([
             },
             {
                 path: "/resturantMenu/:resID",
-                element:<ResturantMenu />
+                element: <ResturantMenu />
+            },
+            {
+                path: "/About",
+                element: <About />
             }
         ],
         errorElement: <Error />

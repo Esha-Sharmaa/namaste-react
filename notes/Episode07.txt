@@ -11,7 +11,7 @@ useState() hook
 
 IMP TIPS 
 1. Hooks are only called inside the body of a functional component 
-2. it is good practice to create variable in the beginnig of the functional component 
+2. it is good practice to create state variable in the beginnig of the functional component 
 3, Never use useState hook in a condition, loops and functions
 
 Routing in React application 

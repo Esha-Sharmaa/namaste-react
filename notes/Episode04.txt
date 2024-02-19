@@ -24,3 +24,6 @@ Assigning unique keys is crucial for optimizing performance during re-render.
 *BEST PRACTICES*
 1. Destructure the props object 
 2. use map function to iterate over the array and create component of it 
+
+
+

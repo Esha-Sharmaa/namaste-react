@@ -4,6 +4,7 @@ const Body = () => {
     return (
         <div className="body">
             <ResturantList />
+            {/* {ResturantList()} */}
         </div>
     );
 }
