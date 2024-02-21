@@ -13,7 +13,7 @@ const Header = () => {
 
             <nav>
                 <Link className="nav-items" to="/cart"> <FontAwesomeIcon icon={faShoppingCart} className="cart" /></Link>
-                <Link className="nav-items" to="/About"> About us </Link>
+                <Link className="nav-items" to="/grocery"> Grocery </Link>
                 <button className="nav-items" href="#" id="signup" onClick={() => setStatus(!status)}> { status ? "Sign out" : "Sign in"}</button>
             </nav>
         </header>
