@@ -1,16 +1,16 @@
-import { RES_CDN_URL } from "../utils/constants";
-
-const ResturantCategory = (props) => {
-    const { name, description, imageId,defaultPrice,} = props?.resData;
+import CategoryItemsList from "./CategoryItemsList";
+const ResturantCategory = ({ data }) => {
+    const { title, itemCards } = data;
     return (
-        <div className="res-category">
-            <div className="details"> 
-                <h3 className="title"> {name} </h3>
-                <span className="rupee"> &#8377;{defaultPrice / 100}</span>
-                <p className="des"> {description}</p>
+        <div>
+            <div className=" my-4 flex justify-between py-4">
+                <span className="text-lg font-semibold "> {title} ({itemCards.length})</span>
+                <span> &darr; </span>
             </div>
-            <div className="img-container"> 
-                <img src={ RES_CDN_URL + imageId} />
+            <div> 
+                {
+                    itemCards.map(item => <CategoryItemsList key={item?.card?.info?.id} resData={item?.card?.info}/>)
+                }
             </div>
         </div>
     )

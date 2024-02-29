@@ -5,7 +5,7 @@ import Body from "./src/components/Body";
 import About from "./src/components/About";
 import Cart from "./src/components/Cart";
 import Error from "./src/components/Error";
-import ResturantMenu from "./src/components/ResturantMenu";
+import ResturantDetails from "./src/components/ResturantDetails";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Shimmer from "./src/components/Shimmer";
 // import Grocery from "./src/components/Grocery";
@@ -30,8 +30,8 @@ const appRoute = createBrowserRouter([
                 element: <Cart />
             },
             {
-                path: "/resturantMenu/:resID",
-                element: <ResturantMenu />
+                path: "/ResturantDetails/:resID",
+                element: <ResturantDetails />
             },
             {
                 path: "/About",
